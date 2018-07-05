@@ -1,6 +1,6 @@
 {
     "name": "data-generator",
-    "version": "0.4.0-0",
+    "version": "0.4.0",
     "main": "./lib/index.js",
     "dependencies": {
         "babel-core": "~6.26.0",
