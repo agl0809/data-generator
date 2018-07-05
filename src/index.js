@@ -6,6 +6,7 @@ import generateCategories from './categories';
 import generateProducts from './products';
 import generateCommands from './commands';
 import generateReviews from './reviews';
+import companies from './companies';
 import finalize from './finalize';
 
 export default ({ serializeDate } = { serializeDate: false }) => {
@@ -19,6 +20,7 @@ export default ({ serializeDate } = { serializeDate: false }) => {
     db.products = generateProducts(db, chance, randomDate);
     db.commands = generateCommands(db, chance, randomDate);
     db.reviews = generateReviews(db, chance, randomDate);
+    db.companies = companies;
     finalize(db, chance, randomDate);
 
     return db;
